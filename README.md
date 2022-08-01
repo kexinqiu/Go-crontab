@@ -22,12 +22,18 @@ Built services on Centos7 Linux:
 
 1. install etcd on Centos7
 2. run etcd: 
+   ```sh
    $ nohup ./etcd --listen-client-urls 'http://0.0.0.0:2379' -- advertise-client-urls 'http://0.0.0.0:2379' &
+   ```
 4. install mongoDB on Centos7
 5. create a database : mkdir data
 6. run mongoDB: 
+   ```sh
    $ nohup bin/mongod --dbpath=./data --bind_ip=0.0.0.0 &
+   ```
+   ```sh
    $ bin/mongo
+   ```
 
 Install package for Go:
 * cron packadge
