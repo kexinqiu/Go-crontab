@@ -8,7 +8,8 @@
 This project is a distributed job schedular system with the Master-Worker pattern and goroutine in Golang.
 
 ### Features
-• Built a front end as web management console to manage and schedule jobs.
+1. Built a front end as web management console to manage and schedule jobs.
+
 • Leveraged etcd to store jobs as key-value pairs, monitor the changes of ongoing jobs, synchronize jobs across all.
 workers with Raft, and implement a distributed lock for the job hold by a worker.
 • Created REST APIs in Golang for CRUD operations, killing jobs, and job log queries from MongoDB.
@@ -29,8 +30,12 @@ Built services on Centos7 Linux:
    $ bin/mongo
 
 Install package for Go:
-1.cron packadge
+1.
+* cron packadge
+  ```sh
   $go get github.com/gorhill/cronexpr
+  ```
+  
 
 2.install etcd package:
   $ go get GitHub.com/coreos/etcd/clientv3
