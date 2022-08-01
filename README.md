@@ -1,4 +1,4 @@
-# go-crontab
+# go- distributed job schedular system
 
 
 <!-- ABOUT THE PROJECT -->
@@ -28,7 +28,7 @@ Back-end Framework:
 Node.js, Express, MongoDB
 
 <!-- GETTING STARTED -->
-## Getting Started
+## How to run
 
 To implement this application:
 
