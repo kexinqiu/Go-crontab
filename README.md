@@ -6,7 +6,7 @@
 ## About The Project
 
 This project is a distributed job schedular system with the Master-Worker pattern and goroutine in Golang.
-https://user-images.githubusercontent.com/85295969/182254985-1d8a3042-4169-4b45-b04d-e2238578cb80.mp4
+* https://user-images.githubusercontent.com/85295969/182254985-1d8a3042-4169-4b45-b04d-e2238578cb80.mp4
 
 ### Features
 * Built a front end as web management console to manage and schedule jobs.
