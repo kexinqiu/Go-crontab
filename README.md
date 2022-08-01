@@ -5,38 +5,44 @@
 ## About The Project
 
 
-This project is a distributed job schedular system using Golang. 
+This project is a distributed job schedular system with the Master-Worker pattern and goroutine in Golang.
 
 ### Features
-Web management console to manage and schedule jobs
-
+• Built a front end as web management console to manage and schedule jobs.
+• Leveraged etcd to store jobs as key-value pairs, monitor the changes of ongoing jobs, synchronize jobs across all.
+workers with Raft, and implement a distributed lock for the job hold by a worker.
+• Created REST APIs in Golang for CRUD operations, killing jobs, and job log queries from MongoDB.
+• Implemented the Cron daemon with crontab commands to run jobs at the given time and frequencies.
 
 
 ### Built With
 
-Built services on Linux:
+Built services on Centos7 Linux:
 
-1. install etcd
-2. run etcd: nohup ./etcd --listen-client-urls 'http://0.0.0.0:2379' -- advertise-client-urls 'http://0.0.0.0:2379' &
+1. install etcd on Centos7
+2. run etcd: 
+   $ nohup ./etcd --listen-client-urls 'http://0.0.0.0:2379' -- advertise-client-urls 'http://0.0.0.0:2379' &
+4. install mongoDB on Centos7
+5. create a database : mkdir data
+6. run mongoDB: 
+   $ nohup bin/mongod --dbpath=./data --bind_ip=0.0.0.0 &
+   $ bin/mongo
 
-Front-end Framework:
+Install package for Go:
+1.cron packadge
+  $go get github.com/gorhill/cronexpr
 
-React, Redux, JavaScript, HTML, CSS, Bootstrap
+2.install etcd package:
+  $ go get GitHub.com/coreos/etcd/clientv3
+  Build connection with your Linux service ip
 
-Back-end Framework:
+3.install mongoDB package:
 
-Node.js, Express, MongoDB
 
 <!-- GETTING STARTED -->
 ## How to run
 
-To implement this application:
+$ go build github.com/owenliang/crontab/master/main
+$ go build github.com/owenliang/crontab/worker/main
 
-1. install Go on your machine
-2. install npm files
-3. command "npm run dev" to run this whole application
-4. command "npm run server" to run the backend
-5. command "npm run client" to run the frontend
 
-cron packadge
-$go get github.com/gorhill/cronexpr
