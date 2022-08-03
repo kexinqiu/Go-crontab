@@ -10,8 +10,9 @@ Here is the demo:
 * https://user-images.githubusercontent.com/85295969/182254985-1d8a3042-4169-4b45-b04d-e2238578cb80.mp4
 
 ### Features
+![crontab](https://user-images.githubusercontent.com/85295969/182517389-8973484b-ffde-472c-acee-1ad10e4c3ea0.jpg)
+ 
 * Built a front end as web management console to manage and schedule jobs.
-
 * Leveraged etcd to store jobs as key-value pairs, monitor the changes of ongoing jobs, synchronize jobs across all.
 workers with Raft, and implement a distributed lock for the job hold by a worker.
 * Created REST APIs in Golang for CRUD operations, killing jobs, and job log queries from MongoDB.
