@@ -9,9 +9,7 @@ This project is a distributed job schedular system with the Master-Worker patter
 Here is the demo:
 * https://user-images.githubusercontent.com/85295969/182254985-1d8a3042-4169-4b45-b04d-e2238578cb80.mp4
 
-![demogif](https://user-images.githubusercontent.com/85295969/182524245-a6ef4648-2126-48b4-9522-0620737ea14f.gif)
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/85295969/182540078-70b87680-736c-4474-9dc8-945c500fc78e.gif)
-
+![demo-12 29 06-AM_ (1)](https://user-images.githubusercontent.com/85295969/182541769-46b24682-b3f0-4fc5-858c-ebd61b6236cc.gif)
 
 ### Features
 ![crontab](https://user-images.githubusercontent.com/85295969/182517389-8973484b-ffde-472c-acee-1ad10e4c3ea0.jpg)
