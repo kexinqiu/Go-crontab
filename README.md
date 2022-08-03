@@ -12,7 +12,7 @@ Here is the demo:
 ![demo-12 29 06-AM_ (1)](https://user-images.githubusercontent.com/85295969/182541769-46b24682-b3f0-4fc5-858c-ebd61b6236cc.gif)
 
 ### Features
-![crontab](https://user-images.githubusercontent.com/85295969/182517389-8973484b-ffde-472c-acee-1ad10e4c3ea0.jpg)
+![Picture1](https://user-images.githubusercontent.com/85295969/182651043-7d1b0f65-dd59-4262-9874-06711696f6bf.jpg)
  
 * Built a front end as web management console to manage and schedule jobs.
 * Leveraged etcd to store jobs as key-value pairs, monitor the changes of ongoing jobs, synchronize jobs across all.
